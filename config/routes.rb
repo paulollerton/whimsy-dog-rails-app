@@ -8,6 +8,12 @@ Rails.application.routes.draw do
     patch '/services/:id' => 'services#update'
     delete '/services/:id' => 'services#destroy'
 
+    get '/reviews' => 'reviews#index'
+    get '/reviews/:id' => 'reviews#show'
+    post 'reviews' => 'reviews#create'
+    patch '/reviews/:id' => 'reviews#update'
+    delete '/reviews/:id' => 'reviews#destroy'
+
   end
   
 end
